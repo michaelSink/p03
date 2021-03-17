@@ -6,12 +6,12 @@ def main():
 
     try:
         inFile = open(inFileName, "r")
-    except:
+    except IOError:
         sys.exit("Cannot open input file: " + inFileName)
 
     try:
         outFile = open(outFileName, "w")
-    except:
+    except IOError:
         sys.exit("Cannot open output file: " + outFile)
 
     map = {"(" : ")", "{" : "}", "[" : "]"}

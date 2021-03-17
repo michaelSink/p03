@@ -12,4 +12,4 @@ class Stack:
         return self.stack.pop();
 
     def clear(self):
-        self.stack.clear()
+        self.stack = [];
